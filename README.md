@@ -1,7 +1,7 @@
 # LabBox_test
 *created on 30/08/2018*
 
-1. Description
+1. **Description**
 
 Test 1: Any language (required)
 Write a program that outputs the integers from 1 to 99 but on some conditions prints a string instead:
@@ -24,7 +24,7 @@ Write a recursive version of the previous function (or an iterative version if y
 Test 5: Regular Expression (required)
 Write a regular expression to match strings containing both “Pikaway” and “#rules” in any order.
 
-2. Answers
+2. **Answers**
 
 - Test1: OpenSource.php
 - Test2: Test_rand5.py
