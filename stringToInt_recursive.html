@@ -25,18 +25,16 @@
             }
         }
 
-        function action(){  
+        function addInt(){  
             if (count<maxCount){
-                console.log('hop')
                 filter(list[count]);
                 if (Number.isInteger(filtered[count])){
                     total+=filtered[count];
                 }
                 count+=1;
-                action();
+                addInt();
             }
             else {
-                console.log('max')
                 return total 
             }
         }
