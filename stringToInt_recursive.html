@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>recursive string to int</title>
+</head>
+<body>
+    <script>
+        let list=['25','35','3.14','hello','0X1A','2e10 5','World','April 27', '3,14', '3:14', '3h14', ' F','December 17, 1995 03:24:00', '05/10/2018'];
+        let count=0;
+        let filtered=[];
+        let maxCount=list.length
+        let total=0;
+   
+        function filter(string){
+            if (!string.includes('0X')){
+                let num=Number(string)
+                console.log(num);
+                if (Number.isInteger(num)){
+                    filtered.push(num);
+                }
+                return filtered;
+            }
+        }
+
+        function action(){  
+            if (count<maxCount){
+                console.log('hop')
+                filter(list[count]);
+                if (Number.isInteger(filtered[count])){
+                    total+=filtered[count];
+                }
+                count+=1;
+                action();
+            }
+            else {
+                console.log('max')
+                return total 
+            }
+        }
+
+        action();
+        console.log(filtered);
+        console.log(total);
+    </script>
+</body>
+</html>
